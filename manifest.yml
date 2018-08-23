@@ -1,8 +1,10 @@
 ---
 applications:
-- name: sap-proxy
+- name: sap-proxy-mv
   buildpack: nodejs_buildpack
   command: node app.js
   memory: 128M
   disk_quota: 128M
   host: sap-proxy
+  services: 
+      - mv-usp-sap-proxy
