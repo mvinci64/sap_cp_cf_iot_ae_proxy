@@ -5,6 +5,6 @@ applications:
   command: node app.js
   memory: 128M
   disk_quota: 128M
-  host: sap-proxy
+  host: sap-proxy-mv
   services: 
-      - mv-usp-sap-proxy
+      - my-usp-sap-proxy
