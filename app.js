@@ -29,7 +29,7 @@ const auth = function (req, res, next) {
         return unauthorized(res);
     };
 
-    if (user.name === '<username>' && user.pass === '<password>') {
+    if (user.name === 'sap' && user.pass === 'comunityrockz') {
         return next();
     } else {
         return unauthorized(res);
