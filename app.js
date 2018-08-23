@@ -61,7 +61,7 @@ app.listen(port, function () {
 })
 
 
-const propertySet = 'iotae.sycor.syc.sap.blogs.notebooks:CPU';
+const propertySet = 'iot.netafimcf.netafim.poc.MeltTemperatureActual';
 
 app.get('/app.svc/*', auth, function (req, res) {
     const url = req.originalUrl.slice(9, req.originalUrl.length).replace('$inlinecount=allpages&', '');
